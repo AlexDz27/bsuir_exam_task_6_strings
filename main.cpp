@@ -10,6 +10,8 @@ int main() {
   string numbersString = "42 30 55 66 9 122 47";
   int numbers[NUMBERS_COUNT];
 
+  cout << "Initial string: " << numbersString << endl;
+
   stringstream StringStream(numbersString);
   string numberTemporaryHolder;
   for (int i = 0; StringStream >> numberTemporaryHolder; i++) {
@@ -22,6 +24,7 @@ int main() {
 
     cout << num << " ";
   }
+  cout << "\n";
 
   return 0;
 }
